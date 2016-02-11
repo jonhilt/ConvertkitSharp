@@ -1,4 +1,5 @@
-﻿using ConvertKitSharp.Enums;
+﻿using ConvertKitSharp.Converters;
+using ConvertKitSharp.Enums;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -14,6 +15,12 @@ namespace ConvertKitSharp.Entities
     public class ConvertKitSubscriber
     {
         /// <summary>
+        /// The subscriber's id.
+        /// </summary>
+        [JsonProperty("id")]
+        public long Id { get; set; }
+
+        /// <summary>
         /// The subscriber's first name.
         /// </summary>
         [JsonProperty("first_name")]
@@ -28,7 +35,7 @@ namespace ConvertKitSharp.Entities
         /// <summary>
         /// The current state of the subscriber.
         /// </summary>
-        [JsonProperty("state")]
+        [JsonProperty("state"), JsonConverter(typeof(NullableEnumConverter<SubscriberState>))]
         public SubscriberState? State { get; set; }
 
         /// <summary>
