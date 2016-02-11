@@ -12,7 +12,7 @@ namespace ConvertKitSharp.Enums
         /// <summary>
         /// The subscriber is subscribed.
         /// </summary>
-        [JsonProperty("subscribed")]
-        Subscribed
+        [JsonProperty("active")]
+        Active
     }
 }
