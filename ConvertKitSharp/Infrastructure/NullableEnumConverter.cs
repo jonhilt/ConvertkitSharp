@@ -1,0 +1,32 @@
+﻿using Newtonsoft.Json.Converters;
+using System;
+using Newtonsoft.Json;
+
+namespace ConvertKitSharp.Converters
+{
+    /// <summary>
+    /// A custom enum converter for all enums which returns the value 
+    /// as null when the value is null or does not exist.
+    /// </summary>
+    public class NullableEnumConverter<T> : StringEnumConverter where T : struct
+    {
+        public override object ReadJson(JsonReader reader, Type objectType, object existingValue, JsonSerializer serializer)
+        {
+            T parsed;
+
+            if (!Enum.TryParse(reader.Value?.ToString() ?? "", true, out parsed))
+            {
+                //Despite using EnumMember, any enum with an '_' value fails the TryParse and IsDefined
+                //checks. Remove underscores and try to match again before returning null.
+
+                if (!Enum.TryParse(reader.Value?.ToString().Replace("_", "") ?? "", true, out parsed))
+                {
+                    return null;
+                }
+            }
+
+            return parsed;
+        }
+    }
+}
+
