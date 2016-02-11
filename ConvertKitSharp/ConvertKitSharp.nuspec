@@ -10,7 +10,7 @@
     <projectUrl>https://github.com/nozzlegear/convertkitsharp</projectUrl>
     <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>A C# and .NET wrapper for the ConvertKit API.</description>
     <releaseNotes>
     0.1.0
     =====
