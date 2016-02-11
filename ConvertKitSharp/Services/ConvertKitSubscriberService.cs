@@ -38,9 +38,9 @@ namespace ConvertKitSharp.Services
         /// </summary>
         /// <param name="subscriber">The subscriber.</param>
         /// <returns>The updated subscriber.</returns>
-        public async Task<ConvertKitSubscriber> UpdateAsync(ConvertKitSubscriber subscriber)
+        public async Task<ConvertKitSubscriber> UpdateAsync(long subscriberId, ConvertKitSubscriber subscriber)
         {
-            var req = RequestEngine.CreateRequest("subscribers", Method.PUT, "subscriber");
+            var req = RequestEngine.CreateRequest($"subscribers/{subscriberId}", Method.PUT, "subscriber");
 
             return await RequestEngine.ExecuteRequestAsync<ConvertKitSubscriber>(_RestClient, req);
         }

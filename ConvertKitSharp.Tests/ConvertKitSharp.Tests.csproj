@@ -63,6 +63,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Forms\When_listing_forms.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Subscribers\When_listing_subscribers.cs" />
     <Compile Include="Utils.cs" />
