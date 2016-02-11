@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertKitSharp", "ConvertKitSharp\ConvertKitSharp.csproj", "{49841ADB-BFA8-46B4-BA6B-361B893E333E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertKitSharp.Tests", "ConvertKitSharp.Tests\ConvertKitSharp.Tests.csproj", "{43D4F0A0-8918-4E41-9D6A-4B84AA70BC1E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{095F75F2-3D73-465D-9C79-477F7774E0DD}"
+	ProjectSection(SolutionItems) = preProject
+		ConvertKitSharp\ConvertKitSharp.nuspec = ConvertKitSharp\ConvertKitSharp.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

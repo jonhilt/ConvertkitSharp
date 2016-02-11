@@ -11,6 +11,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A C# and .NET wrapper for the ConvertKit API.</description>
     <releaseNotes>
+    0.1.1
+    =====
+    - Fixed bad ConvertKitSubscriber.SubscriberState enum deserialization.
+    
     0.1.0
     =====
     Prerelease version of ConvertKitSharp. Supports listing subscribers, updating a subscriber and unsubscribing.
