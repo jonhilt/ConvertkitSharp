@@ -18,7 +18,7 @@ namespace ConvertKitSharp.Tests.Forms
             Result = Service.ListAsync().Await().AsTask.Result;
         };
 
-        It should_list_subscribers = () =>
+        It should_list_forms = () =>
         {
             Result.ShouldNotBeNull();
         };

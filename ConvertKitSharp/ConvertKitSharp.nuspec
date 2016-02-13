@@ -11,6 +11,10 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A C# and .NET wrapper for the ConvertKit API.</description>
     <releaseNotes>
+    1.0.0
+    =====
+    - List and subscribe to forms, courses and tags.
+    
     0.2.0
     =====
     - Adds support for listing ConvertKit forms with ConvertKitFormService.
